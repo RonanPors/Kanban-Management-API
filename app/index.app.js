@@ -1,7 +1,11 @@
 import express from 'express';
 import router from './routers/index.router.js';
+import { limiter } from './middlewares/rate.limiting.js';
 
 const app = express();
+
+// Utilisation du rate limiter
+app.use(limiter);
 
 // Analyse les requête entrantes avec JSON
 app.use(express.json());
