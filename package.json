@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "NODE_ENV=development node --watch server.js",
     "start": "NODE_ENV=production node server.js",
-    "test": "node --experimental-vm-modules node_modules/.bin/jest"
+    "test": "node --experimental-vm-modules node_modules/.bin/jest",
+    "resetDB": "sqitch revert -y && sqitch deploy && node ./data/seeding.js"
   },
   "author": "Ronan Pors",
   "license": "ISC",
