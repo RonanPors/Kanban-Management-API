@@ -1,5 +1,7 @@
 # A faire :
 
+- BDD (Sqitch)
+
 - Controller
   - controller/router
 - Datamappers
@@ -16,4 +18,3 @@
   - (AUTH)
 - JS DOC
 - LOG
-- BDD (Sqitch)
