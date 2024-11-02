@@ -7,13 +7,16 @@
   "scripts": {
     "dev": "NODE_ENV=development node --watch server.js",
     "start": "NODE_ENV=production node server.js",
-    "test": "node --experimental-vm-modules node_modules/.bin/jest"
+    "test": "node --experimental-vm-modules node_modules/.bin/jest",
+    "resetDB": "sqitch revert -y && sqitch deploy && node ./data/seeding.js"
   },
   "author": "Ronan Pors",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
+    "express-jsdoc-swagger": "^1.8.0",
+    "express-rate-limit": "^7.4.1",
     "pg": "^8.13.0"
   },
   "devDependencies": {
