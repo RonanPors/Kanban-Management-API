@@ -505,4 +505,3 @@ class Seeder {
 const seeder = new Seeder(config);
 seeder.seed();
 console.log(seeder);
-

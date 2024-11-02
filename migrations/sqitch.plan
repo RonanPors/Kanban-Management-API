@@ -2,3 +2,4 @@
 %project=kanbanapi
 
 00_init 2024-10-31T09:50:07Z Ronan <pors.ronan@gmail.com> # Create Database
+01_CRUD 2024-11-02T19:20:28Z Ronan <pors.ronan@gmail.com> # Create Read Update and Delete Functions
