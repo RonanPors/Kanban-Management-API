@@ -2,6 +2,6 @@
 
 BEGIN;
 
-DROP TABLE IF EXISTS "list", "card", "tag", "card_has_tag";
+DROP TABLE IF EXISTS "card_has_tag", "tag", "card", "list" CASCADE;
 
 COMMIT;

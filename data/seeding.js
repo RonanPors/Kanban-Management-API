@@ -296,7 +296,8 @@ class Seeder {
     `;
 
     const result = await this.pool.query(this.queryStr);
-    return result;
+
+    return result.rows;
   }
 
   async insertTasks() {
@@ -381,7 +382,7 @@ class Seeder {
     `;
 
     const result = await this.pool.query(this.queryStr);
-    return result;
+    return result.rows;
   }
 
   async insertTags() {
@@ -414,7 +415,7 @@ class Seeder {
     `;
 
     const result = await this.pool.query(this.queryStr);
-    return result;
+    return result.rows;
   }
 
   async insertTasksHasTags() {
@@ -475,7 +476,7 @@ class Seeder {
     `;
 
     const result = await this.pool.query(this.queryStr);
-    return result;
+    return result.rows;
   }
 
   async seed() {
@@ -504,4 +505,3 @@ class Seeder {
 
 const seeder = new Seeder(config);
 seeder.seed();
-console.log(seeder);
