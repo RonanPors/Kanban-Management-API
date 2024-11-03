@@ -4,6 +4,7 @@ const optionSwagger = {
   info: {
     version: "1.0.0",
     title: "KANBAN API Manager",
+    description: "📚 API Documentation for KANBAN API Manager 📚",
   },
   security: {
     BasicAuth: {
