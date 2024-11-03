@@ -1,7 +1,5 @@
 # A faire :
 
-- BDD (Sqitch)
-
 - Controller
   - controller/router
 - Datamappers
